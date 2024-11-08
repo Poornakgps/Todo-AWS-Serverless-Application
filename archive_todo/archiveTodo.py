@@ -25,7 +25,7 @@ def lambda_handler(event, context):
     dynamodb = boto3.resource('dynamodb')
     s3 = boto3.client('s3')
     table = dynamodb.Table('Todos')
-    bucket_name = 'serverless-todo-v1'
+    bucket_name = 'Bucket-Name'
 
     try:
         # Retrieve the todo item from DynamoDB
